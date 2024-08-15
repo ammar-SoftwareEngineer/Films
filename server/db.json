@@ -1,0 +1,36 @@
+{
+  "movies": [
+    { 
+     "id": 1, 
+     "title": "Movie 1",
+     "image": "", 
+     "description": ""
+     },
+    { 
+     "id": 2,
+     "title": "Movie 2",
+     "image": "", 
+     "description": "" 
+    }
+  ],
+  "details": [
+    {
+      "id": 1,
+      "title": "Movie 1",
+      "image": "",
+      "description": "",
+      "cast": "",
+      "release-date": "",
+      "movieId": 1
+    },
+    {
+      "id": 2,
+      "title": "Movie 2",
+      "image": "",
+      "description": "",
+      "cast": "",
+      "release-date": "",
+      "movieId": 2
+    }
+  ]
+}
