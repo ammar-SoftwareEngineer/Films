@@ -13,8 +13,8 @@ import Stack from '@mui/material/Stack';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 // AOS Animation
-import Aos from '@types/aos';
-import 'aos/dist/aos.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function FilmCard() {
     useEffect(() => {
@@ -77,7 +77,7 @@ function FilmCard() {
                             size="large"
                             variant="outlined"
                             color="primary"
-                            onChange={(event, value) => setCurrentPage(value)}
+                            onChange={(_event, value) => setCurrentPage(value)}
                             renderItem={(item) => (
                                 <PaginationItem
                                     slots={{ previous: ArrowBackIosIcon, next: ArrowForwardIosIcon }}
