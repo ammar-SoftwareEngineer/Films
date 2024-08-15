@@ -74,7 +74,7 @@ function FilmCard() {
                         <Pagination
                             count={totalPages}
                             page={currentPage}
-                            size="large"
+                            
                             variant="outlined"
                             color="primary"
                             onChange={(_event, value) => setCurrentPage(value)}
