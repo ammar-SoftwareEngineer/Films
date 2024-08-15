@@ -14,12 +14,13 @@ function FilmDetails() {
   const date = moment().subtract(10, 'days').calendar();
 
   const dataCards = filteredData.filter((f) => String(f.id) === id).map((f) => {
+    const url = f.details.map((d) => d.url)
     return (
       <div key={f.id} className="grid grid-row-1  mx-auto lg:w-4/6">
         <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-4 mb-7 backdrop-blur-sm bg-white/15 md:py-6 md:px-6  px-2 py-4 rounded-lg text-white ">
         
           <div className="image col-span-3 lg:col-span-4 md:mx-0 mx-3 lg:mx-0 ">
-          <img className=" w-full rounded-lg " src={f.details.map((d) => d.url)} alt={`Movie ${f.id}`} />
+          <img className=" w-full rounded-lg " src={String(url)} alt={`Movie ${f.id}`} />
           </div>
          
           <div className="lg:col-span-8 col-span-3 ">

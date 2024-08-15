@@ -13,7 +13,7 @@ import Stack from '@mui/material/Stack';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 // AOS Animation
-import Aos from 'aos';
+import Aos from '@types/aos';
 import 'aos/dist/aos.css'
 
 function FilmCard() {
@@ -29,7 +29,7 @@ function FilmCard() {
         const url = f.details.map((d) => d.url)
         return <Link to={`/film/${f.id}`} >
             <div key={f.id} className="group rounded-md shadow-md m-2  relative overflow-hidden text-white" style={{ cursor: 'pointer' }} data-aos="fade-right">
-                <img className=" w-full rounded-lg object-cover" src={url} alt="" />
+                <img className=" w-full rounded-lg object-cover" src={String(url)} alt="" />
                 <div className="content rounded-lg absolute w-full h-full inset-0" >
                     <div className="absolute  p-4 inset-0 bg-gradient-to-b from-transparent via-transparent  to-black group-hover:from-black/60 group-hover:to-black/60 group-hover:via-black/50  ">
                         <h2 className=" font-light capitalize md:translate-y-40 md:group-hover:translate-y-32 transition-all translate-y-64 ">{f.title.split(" ").slice(0, 2).join(" ")}</h2>
