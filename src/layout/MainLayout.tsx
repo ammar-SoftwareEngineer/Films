@@ -9,10 +9,10 @@ import { Outlet } from "react-router-dom"
 import "@styles/globle.css"
 function MainLayout() {
   return (
-    <div className="layer  flex justify-between flex-col" >
+    <div className="layer flex flex-col justify-between min-h-screen" >
       <DataProvider>
         <Header />
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <Outlet />
         </div>
         <Footer />

@@ -2,8 +2,9 @@ import FilmCard from "@components/FilmCard/FilmCard"
 
 function FilmList() {
   return (
-    <div className=" h-full py-6">
+    <div className=" flex flex-col justify-between h-full">
       <FilmCard/>
+
     </div>
   )
 }
